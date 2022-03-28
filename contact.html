@@ -11,11 +11,10 @@
   <meta name="author" content="Riley Hassell">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logos/favicon.png" rel="icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Pacifico" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -86,7 +85,7 @@
   <header id="header" class="fixed-top non-index">
     <div class="container-fluid">
       <div class="row justify-content-center">
-        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between">
+        <div class="col-xl-9 d-flex align-items-center justify-content-lg-between non-index">
           <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/signature.png" alt="" class="img-fluid"></a>
           <nav id="navbar" class="navbar order-last order-lg-0">
             <ul class="non-index">
@@ -120,33 +119,35 @@
       <div class="contact-page-content">
         <div class="container">
           <div class="row">
-            <div>
+            <div class="col-lg-8 col-md-10 col-sm-12">
               <div>
-                <p>
-                  Fill out the form below to ask a question, request a signed paperback, or schedule Laura for your next event.
-                </p>
-                <h1>
-                  Ask a Question
-                </h1>
-                <form id="contact-form" method="post" class="php-email-form">
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <input type="text" name="name" class="form-control" id="name-input" placeholder="Your Name" required>
+                <div>
+                  <p>
+                    Fill out the form below to ask a question, request a signed paperback, or schedule Laura for your next event.
+                  </p>
+                  <h1>
+                    Ask a Question
+                  </h1>
+                  <form id="contact-form" method="post" class="php-email-form">
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                        <input type="text" name="name" class="form-control" id="name-input" placeholder="Your Name" required>
+                      </div>
+                      <div class="col-md-6 form-group mt-3 mt-md-0">
+                        <input type="email" class="form-control" name="email" id="email-input" placeholder="Your Email" required>
+                      </div>
                     </div>
-                    <div class="col-md-6 form-group mt-3 mt-md-0">
-                      <input type="email" class="form-control" name="email" id="email-input" placeholder="Your Email" required>
+                    <div class="form-group mt-3">
+                      <textarea id="message-input" class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                     </div>
-                  </div>
-                  <div class="form-group mt-3">
-                    <textarea id="message-input" class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                  </div>
-                  <div class="my-3">
-                  </div>
-                  <div class="text-center">
-                    <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
-                    <button type="button" onClick="submitToAPI(event)" class="btn btn-lg" style="margin-top:20px;">Submit</button>
-                  </div>
-                </form>
+                    <div class="my-3">
+                    </div>
+                    <div class="text-center">
+                      <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
+                      <button type="button" onClick="submitToAPI(event)" class="btn btn-lg" style="margin-top:20px;">Submit</button>
+                    </div>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -161,6 +162,11 @@
       <div class="social-links">
         <a href="https://www.instagram.com/lauranejako_author/?hl=en" class="instagram"><i class="bx bxl-instagram"></i></a>
         <a href="https://www.linkedin.com/in/lauranejako" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="https://www.goodreads.com/user/show/147174762-laura-nejako" class="goodreads">
+          <i class="bx">
+            <img src="assets/img/logos/goodread-logo.svg">
+          </i>
+        </a>
       </div>
       <div class="copyright">
         All Rights Reserved Copyright <strong><span>2022</span></strong> &copy;
