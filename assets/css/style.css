@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Baskervville", sans-serif;
-  color: #444444;
+  color: #666666;
   position: relative;
   min-height: 100vh;
 }
@@ -31,6 +31,9 @@ h3 {
 }
 
 .book-title {
+  font-style: italic;
+}
+.cover-mockup {
   font-style: italic;
 }
 
@@ -366,7 +369,7 @@ h3 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 20px 0px 20px 0px;
+  padding: 0px 0px 20px 0px;
   overflow: hidden;
 }
 .section-bg {
@@ -383,7 +386,7 @@ section {
 }
 .section-title p {
   margin-bottom: 0;
-  color: #777777;
+  color: #666666;
   font-size: 15px;
 }
 
@@ -527,7 +530,7 @@ a h2 {
 --------------------------------------------------------------*/
 .index .index-page-content {
   font-size: 15px;
-  color: #848484;
+  color: #666666;
   margin-left: 60px;
   padding: 55px 0px 50px 0px;
 }
@@ -537,7 +540,7 @@ a h2 {
 }
 .index .info-text p {
   font-size: 18px;
-  color: #848484;
+  color: #666666;
   padding: 0px;
   margin: 0px;
 }
@@ -561,7 +564,7 @@ a h2 {
 --------------------------------------------------------------*/
 .about .info-text p {
   font-size: 18px;
-  color: #848484;
+  color: #666666;
   padding: 0px;
   margin: 0px;
 }
@@ -581,8 +584,6 @@ a h2 {
   justify-content: center;
 }
 .about .about-page-content {
-  font-size: 18px;
-  color: black;
   margin: 0px;
   padding: 50px 0px 50px 0px;
 }
@@ -598,7 +599,9 @@ a h2 {
 .about-podcasts-i-love .row {
   justify-content: center;
 }
-
+.about a {
+  text-decoration: underline;
+}
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -656,7 +659,13 @@ a h2 {
 .contact .button {
   font-family: "Cedarville Cursive", sans-serif;
 }
-
+.contact a {
+  text-decoration: underline;
+}
+.contact .contact-page-content {
+  margin: 0px;
+  padding: 50px 0px 50px 0px;
+}
 /*--------------------------------------------------------------
 # Press
 --------------------------------------------------------------*/
@@ -681,7 +690,10 @@ a h2 {
 .card-img-book-cover {
   background-size: contain;
 }
-
+.press .press-page-content {
+  margin: 0px;
+  padding: 50px 0px 50px 0px;
+}
 /*--------------------------------------------------------------
 # lets-become-strangers
 --------------------------------------------------------------*/
@@ -724,7 +736,7 @@ a h2 {
 --------------------------------------------------------------*/
 .books-and-publications .info-text p {
   font-size: 18px;
-  color: #848484;
+  color: #666666;
   padding: 0px;
   margin: 0px;
 }
@@ -806,7 +818,3 @@ a h2 {
 #footer .copyright {
   margin: 0 0 5px 0;
 }
-
-/*--------------------------------------------------------------
-# Modal
---------------------------------------------------------------*/

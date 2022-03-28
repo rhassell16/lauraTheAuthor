@@ -1,14 +1,20 @@
 # To do:
 
-- change text color to a darker color
-- make the g white in the goodread icon in the footer
-- finish books & publications webpage
-- look at hero at index
-- look at text after submitting an email
-- color scheme
-- have contact me in index page
-- "This is a placeholder cover mockup." for the book pic
+## books & publications
 
-# color scheme
+- add table background
+- add books on table that you can click on
 
-- color of book
+## Hero
+
+- adjust background and text on the hero so the words align on the binder of the book
+
+## Contact
+
+- add text about submit that says: "Loading", "submitted", "error"
+
+### Clean
+
+- clean css
+- clean js
+- move scripts to js files
