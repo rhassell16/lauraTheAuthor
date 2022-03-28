@@ -14,7 +14,7 @@
   <link href="assets/img/logos/favicon.png" rel="icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Pacifico|Cedarville+Cursive|Baskervville" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -34,17 +34,17 @@
 
        var Namere = /[A-Za-z]{1}[A-Za-z]/;
         if (!Namere.test($("#name-input").val())) {
-                      alert ("Name can not less than 2 char");
-            return;
+          alert ("Name can not less than 2 char");
+          return;
         }
         if ($("#email-input").val()=="") {
-            alert ("Please enter your email id");
-            return;
+          alert ("Please enter your email id");
+          return;
         }
         var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
         if (!reeamil.test($("#email-input").val())) {
-            alert ("Please enter valid email address");
-            return;
+          alert ("Please enter valid email address");
+          return;
         }
 
        var name = $("#name-input").val();
@@ -67,14 +67,12 @@
 
          
          success: function () {
-           // clear form and show a success message
-           alert("Successfull");
-           document.getElementById("contact-form").reset();
-       location.reload();
+          alert("An email has been sent to Laura!");
+          document.getElementById("contact-form").reset();
+          location.reload();
          },
          error: function () {
-           // show an error message
-           alert("UnSuccessfull");
+          alert("Sending the email failed, please try again");
          }});
      }
   </script>
@@ -108,7 +106,7 @@
     <section id="page-title" class="d-flex flex-column justify-content-center">
       <div class="container">
         <div class="page-title">
-          <h1>About</h1>
+          <h1>Contact</h1>
         </div>
       </div>
     </section><!-- End Page Title -->
@@ -124,7 +122,11 @@
                 <div>
                   <p>
                     Fill out the form below to ask a question, request a signed paperback, or schedule Laura for your next event.
+                    <br>
+                    <br>
+                    She can also be reached by email at LauraNejako@gmail.com
                   </p>
+                  <br>
                   <h1>
                     Ask a Question
                   </h1>
@@ -143,8 +145,7 @@
                     <div class="my-3">
                     </div>
                     <div class="text-center">
-                      <div class="g-recaptcha" data-sitekey="6Lc7cVMUAAAAAM1yxf64wrmO8gvi8A1oQ_ead1ys" class="form-control" style="width:100%;"></div>
-                      <button type="button" onClick="submitToAPI(event)" class="btn btn-lg" style="margin-top:20px;">Submit</button>
+                      <button type="submit" onClick="submitToAPI(event)" class="button btn-lg" style="margin-top:20px;">Submit</button>
                     </div>
                   </form>
                 </div>

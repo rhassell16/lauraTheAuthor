@@ -2,7 +2,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Baskervville", sans-serif;
   color: #444444;
   position: relative;
   min-height: 100vh;
@@ -23,12 +23,15 @@ a:hover {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Raleway", sans-serif;
+h3 {
+  font-family: "Cedarville Cursive", sans-serif;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+}
+
+.book-title {
+  font-style: italic;
 }
 
 /*--------------------------------------------------------------
@@ -333,7 +336,7 @@ h6 {
   line-height: 57px;
   color: #fff;
 }
-#hero h3 {
+#hero h2 {
   color: #eee;
   margin-bottom: 15px;
   font-size: 18px;
@@ -345,45 +348,16 @@ h6 {
   color: #eee;
   font-size: 18px;
 }
-#hero .book-title {
-  font-style: italic;
-}
-@media (min-width: 1024px) {
-  #hero {
-    background-attachment: fixed;
-  }
-}
+
 @media (max-width: 768px) {
   #hero h1 {
-    font-size: 28px;
+    font-size: 50px;
     line-height: 36px;
   }
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
-  }
-}
-
-@-webkit-keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
-  }
-}
-
-@keyframes pulsate-btn {
-  0% {
-    transform: scale(0.6, 0.6);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1, 1);
-    opacity: 0;
   }
 }
 
@@ -405,16 +379,6 @@ section {
   font-size: 50px;
   font-weight: bold;
   position: relative;
-}
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: #009961;
-  bottom: 0;
-  left: 0;
 }
 .section-title p {
   margin-bottom: 0;
@@ -470,6 +434,9 @@ section {
   object-fit: contain;
   overflow: hidden;
 }
+.index .index-page-content h3 {
+  text-align: center;
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -489,7 +456,10 @@ section {
   overflow: hidden;
 }
 .about .author-image img {
+  display: flex;
   width: 100%;
+  margin-top: 0px 0px 20px 0px;
+  justify-content: center;
 }
 .about .about-page-content {
   font-size: 18px;
@@ -522,12 +492,12 @@ section {
   border-radius: 2px;
   transition: 0.5s;
   margin: 10px;
-  background: #009961;
+  background: black;
   color: #fff;
   border-radius: 50px;
 }
 .button:hover {
-  background: #00b371;
+  background: gray;
 }
 @media (min-width: 769px) {
   .button-container {
@@ -557,11 +527,6 @@ section {
   transform: translateY(-4px);
   box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.3), 0 0 1px 0 rgba(0, 0, 0, 0.25);
 }
-/* .card:hover .card-content,
-.card.hover .card-content {
-  box-shadow: inset 0 3px 0 0 #ccb65e;
-  border-color: #ccb65e;
-} */
 
 .card:hover .card-img .overlay,
 .card.hover .card-img .overlay {
@@ -670,31 +635,6 @@ a h2 {
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
-.contact .php-email-form .sent-message br + br {
-  margin-top: 25px;
-}
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
 .contact .php-email-form .loading:before {
   content: "";
   display: inline-block;
@@ -704,8 +644,6 @@ a h2 {
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
   border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
 }
 .contact .php-email-form input,
 .contact .php-email-form textarea {
@@ -716,7 +654,7 @@ a h2 {
 }
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #009961;
+  border-color: black;
 }
 .contact .php-email-form input {
   height: 44px;
@@ -725,7 +663,7 @@ a h2 {
   padding: 10px 12px;
 }
 .contact .php-email-form button[type="submit"] {
-  background: #009961;
+  background: black;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -733,23 +671,7 @@ a h2 {
   border-radius: 50px;
 }
 .contact .php-email-form button[type="submit"]:hover {
-  background: #00b371;
-}
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+  background: grey;
 }
 .contact p {
   text-align: center;
@@ -757,6 +679,9 @@ a h2 {
 
 .contact .row {
   justify-content: center;
+}
+.contact .button {
+  font-family: "Cedarville Cursive", sans-serif;
 }
 
 /*--------------------------------------------------------------
