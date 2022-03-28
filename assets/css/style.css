@@ -376,7 +376,7 @@ section {
   background-color: #8fffd6;
 }
 .section-title {
-  padding: 0px 0px 0px 0px;
+  padding: 50px 0px 50px 0px;
   text-align: center;
 }
 .section-title h1 {
@@ -585,7 +585,7 @@ a h2 {
 }
 .about .about-page-content {
   margin: 0px;
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0px 0px 0px;
 }
 .about-books-i-love .card {
   padding: 0px;
@@ -605,14 +605,31 @@ a h2 {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .email-form {
+.contact p {
+  text-align: center;
+}
+.contact .row {
+  justify-content: center;
+}
+.contact a {
+  text-decoration: underline;
+}
+.contact .contact-page-content {
+  margin: 0px;
+  padding: 50px 0px 0px 0px;
+}
+
+/*--------------------------------------------------------------
+# question
+--------------------------------------------------------------*/
+.question .email-form {
   width: 100%;
   background: #fff;
 }
-.contact .email-form .form-group {
+.question .email-form .form-group {
   padding-bottom: 8px;
 }
-.contact .email-formm .loading:before {
+.question .email-formm .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -622,21 +639,21 @@ a h2 {
   border: 3px solid #8f3f1f;
   border-top-color: #eee;
 }
-.contact .email-form input,
-.contact .email-form textarea {
+.question .email-form input,
+.question .email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 4px;
 }
-.contact .email-form input:focus,
-.contact .email-form textarea:focus {
+.question .email-form input:focus,
+.question .email-form textarea:focus {
   border-color: #8f3f1f;
 }
-.contact .email-form input {
+.question .email-form input {
   height: 44px;
 }
-.contact .email-form textarea {
+.question .email-form textarea {
   padding: 10px 12px;
 }
 .contact .email-form button[type="submit"] {
@@ -647,24 +664,24 @@ a h2 {
   transition: 0.4s;
   border-radius: 50px;
 }
-.contact .email-form button[type="submit"]:hover {
+.question .email-form button[type="submit"]:hover {
   background: #c27e63;
 }
-.contact p {
+.question p {
   text-align: center;
 }
-.contact .row {
+.question .row {
   justify-content: center;
 }
-.contact .button {
+.question .button {
   font-family: "Cedarville Cursive", sans-serif;
 }
-.contact a {
+.question a {
   text-decoration: underline;
 }
-.contact .contact-page-content {
+.question .question-page-content {
   margin: 0px;
-  padding: 50px 0px 50px 0px;
+  padding: 0px 0px 50px 0px;
 }
 /*--------------------------------------------------------------
 # Press

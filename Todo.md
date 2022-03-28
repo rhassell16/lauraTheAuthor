@@ -13,6 +13,10 @@
 
 - add text about submit that says: "Loading", "submitted", "error"
 
+## navigaton
+
+- fix color schema on navigation
+
 ### Clean
 
 - clean css
