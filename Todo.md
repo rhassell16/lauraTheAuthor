@@ -17,6 +17,10 @@
 
 - fix color schema on navigation
 
+## Lets become strangers
+
+- fix youtube iframe
+
 ### Clean
 
 - clean css
