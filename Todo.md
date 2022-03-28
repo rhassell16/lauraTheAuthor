@@ -6,6 +6,8 @@
 - look at hero at index
 - look at text after submitting an email
 - color scheme
+- have contact me in index page
+- "This is a placeholder cover mockup." for the book pic
 
 # color scheme
 

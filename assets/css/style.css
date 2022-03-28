@@ -14,7 +14,7 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: #c27e63;
   text-decoration: none;
 }
 
@@ -24,7 +24,7 @@ a:hover {
 
 h1,
 h3 {
-  font-family: "Cedarville Cursive", sans-serif;
+  font-family: "Baskervville", sans-serif;
   text-align: center;
   font-size: 50px;
   color: black;
@@ -126,7 +126,7 @@ h3 {
   height: 2px;
   bottom: -2px;
   left: 0;
-  background-color: #009961;
+  background-color: #8f3f1f;
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -335,6 +335,7 @@ h3 {
   font-weight: 800;
   line-height: 57px;
   color: #fff;
+  font-family: "Cedarville Cursive", sans-serif;
 }
 #hero h2 {
   color: #eee;
@@ -403,82 +404,6 @@ section {
   position: relative;
 }
 
-/*--------------------------------------------------------------
-# Index
---------------------------------------------------------------*/
-.index .index-page-content {
-  font-size: 15px;
-  color: #848484;
-  margin-left: 60px;
-  padding: 55px 0px 50px 0px;
-}
-.index .info-text {
-  padding: 0px 20px 0px 20px;
-  margin: 10px 0px 10px 0px;
-}
-.index .info-text p {
-  font-size: 18px;
-  color: #848484;
-  padding: 0px;
-  margin: 0px;
-}
-.index .image {
-  display: flex;
-  margin: 20px 0px 20px 0px;
-  justify-content: center;
-}
-.index .image img {
-  display: flex;
-  /* width: 100%; */
-  height: 100%;
-  object-fit: contain;
-  overflow: hidden;
-}
-.index .index-page-content h3 {
-  text-align: center;
-}
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-.about .info-text p {
-  font-size: 18px;
-  color: #848484;
-  padding: 0px;
-  margin: 0px;
-}
-.about .image {
-  display: flex;
-  margin: 20px 0px 20px 0px;
-  justify-content: center;
-}
-.about .image img {
-  object-fit: contain;
-  overflow: hidden;
-}
-.about .author-image img {
-  display: flex;
-  width: 100%;
-  margin-top: 0px 0px 20px 0px;
-  justify-content: center;
-}
-.about .about-page-content {
-  font-size: 18px;
-  color: black;
-  margin: 0px;
-  padding: 50px 0px 50px 0px;
-}
-.about-books-i-love .card {
-  padding: 0px;
-}
-.about-books-i-love .row {
-  justify-content: center;
-}
-.about-podcasts-i-love .card {
-  padding: 0px;
-}
-.about-podcasts-i-love .row {
-  justify-content: center;
-}
 /*--------------------------------------------------------------
 # Buttons
 --------------------------------------------------------------*/
@@ -574,14 +499,13 @@ section {
 }
 .card-img .overlay .overlay-content a:hover,
 .card-img .overlay .overlay-content a.hover {
-  background: #ccb65e;
-  border-color: #ccb65e;
+  background: #8f3f1f;
+  border-color: #8f3f1f;
 }
 .card-content {
   width: 100%;
   min-height: 65px;
   background-color: #fff;
-  /* border-top: 1px solid #e9e9eb; */
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
   padding: 5px 5px;
@@ -599,84 +523,133 @@ a h2 {
 }
 
 /*--------------------------------------------------------------
+# Index
+--------------------------------------------------------------*/
+.index .index-page-content {
+  font-size: 15px;
+  color: #848484;
+  margin-left: 60px;
+  padding: 55px 0px 50px 0px;
+}
+.index .info-text {
+  padding: 0px 20px 0px 20px;
+  margin: 10px 0px 10px 0px;
+}
+.index .info-text p {
+  font-size: 18px;
+  color: #848484;
+  padding: 0px;
+  margin: 0px;
+}
+.index .image {
+  display: flex;
+  margin: 20px 0px 20px 0px;
+  justify-content: center;
+}
+.index .image img {
+  display: flex;
+  /* width: 100%; */
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
+.index .index-page-content h3 {
+  text-align: center;
+}
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about .info-text p {
+  font-size: 18px;
+  color: #848484;
+  padding: 0px;
+  margin: 0px;
+}
+.about .image {
+  display: flex;
+  margin: 20px 0px 20px 0px;
+  justify-content: center;
+}
+.about .image img {
+  object-fit: contain;
+  overflow: hidden;
+}
+.about .author-image img {
+  display: flex;
+  width: 100%;
+  margin-top: 0px 0px 20px 0px;
+  justify-content: center;
+}
+.about .about-page-content {
+  font-size: 18px;
+  color: black;
+  margin: 0px;
+  padding: 50px 0px 50px 0px;
+}
+.about-books-i-love .card {
+  padding: 0px;
+}
+.about-books-i-love .row {
+  justify-content: center;
+}
+.about-podcasts-i-love .card {
+  padding: 0px;
+}
+.about-podcasts-i-love .row {
+  justify-content: center;
+}
+
+/*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.contact .info {
+.contact .email-form {
   width: 100%;
   background: #fff;
 }
-.contact .info i {
-  font-size: 32px;
-  color: #009961;
-  float: left;
-  line-height: 1;
-}
-.contact .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: #282828;
-}
-.contact .info p {
-  padding: 0 0 0 60px;
-  margin-bottom: 0;
-  font-size: 14px;
-  color: #5b5b5b;
-}
-.contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
-}
-.contact .php-email-form {
-  width: 100%;
-  background: #fff;
-}
-.contact .php-email-form .form-group {
+.contact .email-form .form-group {
   padding-bottom: 8px;
 }
-.contact .php-email-form .loading:before {
+.contact .email-formm .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #8f3f1f;
   border-top-color: #eee;
 }
-.contact .php-email-form input,
-.contact .php-email-form textarea {
+.contact .email-form input,
+.contact .email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
   border-radius: 4px;
 }
-.contact .php-email-form input:focus,
-.contact .php-email-form textarea:focus {
-  border-color: black;
+.contact .email-form input:focus,
+.contact .email-form textarea:focus {
+  border-color: #8f3f1f;
 }
-.contact .php-email-form input {
+.contact .email-form input {
   height: 44px;
 }
-.contact .php-email-form textarea {
+.contact .email-form textarea {
   padding: 10px 12px;
 }
-.contact .php-email-form button[type="submit"] {
-  background: black;
+.contact .email-form button[type="submit"] {
+  background: #8f3f1f;
   border: 0;
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
   border-radius: 50px;
 }
-.contact .php-email-form button[type="submit"]:hover {
-  background: grey;
+.contact .email-form button[type="submit"]:hover {
+  background: #c27e63;
 }
 .contact p {
   text-align: center;
 }
-
 .contact .row {
   justify-content: center;
 }
@@ -733,6 +706,18 @@ a h2 {
 .card-img-book-cover {
   background-size: contain;
 }
+.lets-become-strangers .image {
+  display: flex;
+  margin: 0px 0px 20px 0px;
+  justify-content: center;
+}
+.lets-become-strangers .image img {
+  display: flex;
+  /* width: 100%; */
+  height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+}
 
 /*--------------------------------------------------------------
 # books-and-publications
@@ -761,16 +746,16 @@ a h2 {
   margin: 0px;
   padding: 50px 0px 50px 0px;
 }
-.books-and-publications-books-i-love .card {
+.books-and-publications .card {
   padding: 0px;
 }
-.books-and-publications-books-i-love .row {
+.books-and-publications .row {
   justify-content: center;
 }
-.books-and-publications-podcasts-i-love .card {
+.books-and-publications .card {
   padding: 0px;
 }
-.books-and-publications-podcasts-i-love .row {
+.books-and-publications .row {
   justify-content: center;
 }
 
@@ -802,7 +787,7 @@ a h2 {
 #footer .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #009961;
+  background: #8f3f1f;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -814,20 +799,14 @@ a h2 {
   transition: 0.3s;
 }
 #footer .social-links a:hover {
-  background: #00b371;
+  background: #c27e63;
   color: #fff;
   text-decoration: none;
 }
 #footer .copyright {
   margin: 0 0 5px 0;
 }
-#footer .credits {
-  font-size: 13px;
-}
-#footer .credits a {
-  color: #00b371;
-  transition: 0.3s;
-}
-#footer .credits a:hover {
-  color: #009961;
-}
+
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/

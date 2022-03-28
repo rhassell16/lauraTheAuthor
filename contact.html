@@ -14,67 +14,62 @@
   <link href="assets/img/logos/favicon.png" rel="icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Pacifico|Cedarville+Cursive|Baskervville" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Pacifico|Cedarville+Cursive|Baskervville" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  
   <script>
     function submitToAPI(e) {
-       e.preventDefault();
+    e.preventDefault();
 
-       var Namere = /[A-Za-z]{1}[A-Za-z]/;
-        if (!Namere.test($("#name-input").val())) {
-          alert ("Name can not less than 2 char");
-          return;
-        }
-        if ($("#email-input").val()=="") {
-          alert ("Please enter your email id");
-          return;
-        }
-        var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
-        if (!reeamil.test($("#email-input").val())) {
-          alert ("Please enter valid email address");
-          return;
-        }
+    var Namere = /[A-Za-z]{1}[A-Za-z]/;
+    if (!Namere.test($("#name-input").val())) {
+        alert ("Name can not less than 2 char");
+        return;
+    }
+    if ($("#email-input").val()=="") {
+        alert ("Please enter your email id");
+        return;
+    }
+    var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+    if (!reeamil.test($("#email-input").val())) {
+        alert ("Please enter valid email address");
+        return;
+    }
 
-       var name = $("#name-input").val();
-       var email = $("#email-input").val();
-       var message = $("#message-input").val();
-       console.log(message);
-       var data = {
-          name: name,
-          email: email,
-          message: message
+    var name = $("#name-input").val();
+    var email = $("#email-input").val();
+    var message = $("#message-input").val();
+    var data = {
+        name: name,
+        email: email,
+        message: message
         };
 
-       $.ajax({
-         type: "POST",
-         url : "https://i52livuoh8.execute-api.us-east-1.amazonaws.com/lauraEmails/contact-us",
-         dataType: "json",
-         crossDomain: "true",
-         contentType: "application/json; charset=utf-8",
-         data: JSON.stringify(data),
+    $.ajax({
+        type: "POST",
+        url : "https://i52livuoh8.execute-api.us-east-1.amazonaws.com/lauraEmails/contact-us",
+        dataType: "json",
+        crossDomain: "true",
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify(data),
+        success: function () {
+            alert("An email has been sent to Laura!");
+            document.getElementById("contact-form").reset();
+            location.reload();
+        },
+        error: function () {
+            alert("Sending the email failed, please try again");
+        }
+    });
+}
 
-         
-         success: function () {
-          alert("An email has been sent to Laura!");
-          document.getElementById("contact-form").reset();
-          location.reload();
-         },
-         error: function () {
-          alert("Sending the email failed, please try again");
-         }});
-     }
   </script>
 </head>
 
@@ -124,13 +119,13 @@
                     Fill out the form below to ask a question, request a signed paperback, or schedule Laura for your next event.
                     <br>
                     <br>
-                    She can also be reached by email at LauraNejako@gmail.com
+                    She can also be reached by email at <a href="mailto:LauraNejako@gmail.com">LauraNejako@gmail.com</a>
                   </p>
                   <br>
                   <h1>
                     Ask a Question
                   </h1>
-                  <form id="contact-form" method="post" class="php-email-form">
+                  <form id="contact-form" method="post" class="email-form">
                     <div class="row">
                       <div class="col-md-6 form-group">
                         <input type="text" name="name" class="form-control" id="name-input" placeholder="Your Name" required>
@@ -170,18 +165,14 @@
         </a>
       </div>
       <div class="copyright">
-        All Rights Reserved Copyright <strong><span>2022</span></strong> &copy;
+        All Rights Reserved Copyright <strong><span id="copyright-year"></span></strong> &copy;
       </div>
     </div>
   </footer><!-- End Footer -->
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
