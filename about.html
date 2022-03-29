@@ -12,8 +12,10 @@
   <meta http-equiv="Content-Security-Policy"
     content="
     default-src 'self'; 
+    img-src 'self';
     child-src 'none';
-    style-src 'self' fonts.googleapis.com https://fonts.googleapis.com; 
+    script-src 'self';
+    style-src 'self' 'unsafe-inline' fonts.googleapis.com https://fonts.googleapis.com; 
     font-src fonts.gstatic.com https://fonts.gstatic.com;">
 
   <!-- Favicons -->
@@ -34,6 +36,13 @@
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top non-index">
+    <a class="banner" href="#">
+      <div id="banner">
+        <div id="banner-content">
+          <span class="book-title">Let's Become Strangers</span><span>&nbsp;</span> — Get your event ticket and presale book
+        </div>
+      </div>
+    </a>
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-xl-9 d-flex align-items-center justify-content-lg-between non-index">
@@ -286,7 +295,7 @@
         </a>
       </div>
       <div class="copyright">
-        All Rights Reserved Copyright <strong><<span id="copyright-year"></span></strong> &copy;
+        All Rights Reserved Copyright <strong><span id="copyright-year"></span></strong> &copy;
       </div>
     </div>
   </footer><!-- End Footer -->

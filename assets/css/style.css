@@ -71,8 +71,44 @@ h3 {
 @media (max-width: 992px) {
   #header {
     border: 0;
-    padding: 15px 0;
+    padding: 0px;
   }
+}
+
+/*--------------------------------------------------------------
+# Top Presale Banner
+--------------------------------------------------------------*/
+.banner a {
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+#banner div {
+  display: flex;
+  position: initial;
+  background-color: #8f3f1f;
+  width: 100%;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+#banner div:hover {
+  background-color: #c27e63;
+}
+#banner-content {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  padding: 0px;
+  border: 0px;
+  line-height: 32px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.banner #banner-content,
+.banner #banner-content a:hover {
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -559,6 +595,9 @@ a h2 {
 .index .index-page-content h3 {
   text-align: center;
 }
+.index a {
+  text-decoration: underline;
+}
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -747,7 +786,16 @@ a h2 {
   object-fit: contain;
   overflow: hidden;
 }
-
+.lets-become-strangers .lets-become-strangers-page-content {
+  margin: 0px;
+  padding: 50px 0px 50px 0px;
+}
+.lets-become-strangers .container .row {
+  margin-bottom: 20px;
+}
+.lets-become-strangers a {
+  text-decoration: underline;
+}
 /*--------------------------------------------------------------
 # books-and-publications
 --------------------------------------------------------------*/

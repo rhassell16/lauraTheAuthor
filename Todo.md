@@ -12,12 +12,13 @@
 ## Contact
 
 - add text about submit that says: "Loading", "submitted", "error"
+- add recaptcha
 
 ## navigaton
 
 - fix color schema on navigation
 
-## Lets become strangers
+## Youtube iframe (half done)
 
 - fix youtube iframe
 

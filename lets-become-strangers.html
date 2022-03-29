@@ -11,12 +11,13 @@
   <meta name="author" content="Riley Hassell">
   <meta http-equiv="Content-Security-Policy"
       content="
-      default-src 'self'; 
-      child-src www.youtube.com;
-      style-src 'self' fonts.googleapis.com https://fonts.googleapis.com; 
+      default-src 'self';
+      img-src 'self';
+      child-src 'none';
+      script-src 'self';
+      style-src 'self' 'unsafe-inline' fonts.googleapis.com https://fonts.googleapis.com; 
       font-src fonts.gstatic.com https://fonts.gstatic.com; 
-      frame-src youtube.com https://www.youtube.com www.youtube-nocookie.com;
-      script-src https://www.youtube.com https://m.youtube.com;">
+      frame-src youtube.com https://www.youtube.com www.youtube-nocookie.com;">
 
   <!-- Favicons -->
   <link href="assets/img/logos/favicon.png" rel="icon">
@@ -36,6 +37,13 @@
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top non-index">
+    <a class="banner" href="#">
+      <div id="banner">
+        <div id="banner-content">
+          <span class="book-title">Let's Become Strangers</span><span>&nbsp;</span> — Get your event ticket and presale book
+        </div>
+      </div>
+    </a>
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-xl-9 d-flex align-items-center justify-content-lg-between non-index">
@@ -76,11 +84,15 @@
             <div class="image col-lg-12">
               <div class="embed-responsive embed-responsive-21by9">
                 <!-- <iframe class="embed-responsive-item" src="https://www.youtube.com/watch?v=o1qWxvLtJaY"></iframe> -->
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="1200" height="600" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
+      <div class="container">
+        <div class="row">
           <div class="row">
             <div class="col-lg-4 col-md-6">
               <div class="image">
