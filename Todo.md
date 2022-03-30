@@ -19,10 +19,6 @@
 
 # To do Future:
 
-## Youtube iframe (half done)
-
-- fix youtube cps
-
 ## Contact
 
 - add text about submit that says: "Loading", "submitted", "error"
