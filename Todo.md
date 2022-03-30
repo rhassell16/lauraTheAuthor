@@ -1,4 +1,4 @@
-# To do:
+# To do Now:
 
 ## books & publications
 
@@ -9,20 +9,25 @@
 
 - adjust background and text on the hero so the words align on the binder of the book
 
-## Contact
-
-- add text about submit that says: "Loading", "submitted", "error"
-- add recaptcha
-
 ## navigaton
 
 - fix color schema on navigation
 
+## Contact
+
+- add recaptcha
+
+# To do Future:
+
 ## Youtube iframe (half done)
 
-- fix youtube iframe
+- fix youtube cps
 
-### Clean
+## Contact
+
+- add text about submit that says: "Loading", "submitted", "error"
+
+# Clean
 
 - clean css
 - clean js
