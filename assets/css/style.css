@@ -714,10 +714,13 @@ a h2 {
 }
 .press .press-page-content {
   margin: 0px;
-  padding: 50px 0px 50px 0px;
+  padding: 50px 0px 0px 0px;
 }
 .press .row {
   justify-content: space-evenly;
+}
+.press .image {
+  padding-bottom: 40px;
 }
 @media (min-width: 1250px) {
   .press .container {
