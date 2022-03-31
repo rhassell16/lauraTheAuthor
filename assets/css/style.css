@@ -562,13 +562,13 @@ a h2 {
   padding: 0px;
 }
 .about-books-i-love .row {
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .about-podcasts-i-love .card {
   padding: 0px;
 }
 .about-podcasts-i-love .row {
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .about a {
   text-decoration: underline;
@@ -577,6 +577,18 @@ a h2 {
   margin: 0px;
   padding-bottom: 50px;
 }
+
+@media (min-width: 1250px) {
+  .about-books-i-love .container {
+    width: 1250px;
+  }
+}
+@media (min-width: 1000px) {
+  .about-podcasts-i-love .container {
+    width: 1000px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -661,9 +673,6 @@ a h2 {
 /*--------------------------------------------------------------
 # Press
 --------------------------------------------------------------*/
-.press .row {
-  justify-content: center;
-}
 .press .card {
   width: 100%;
   margin: 0px;
@@ -685,6 +694,14 @@ a h2 {
 .press .press-page-content {
   margin: 0px;
   padding: 50px 0px 50px 0px;
+}
+.press .row {
+  justify-content: space-evenly;
+}
+@media (min-width: 1250px) {
+  .press .container {
+    width: 1250px;
+  }
 }
 /*--------------------------------------------------------------
 # lets-become-strangers
@@ -781,13 +798,12 @@ a h2 {
   padding: 0px;
 }
 .books-and-publications .row {
-  justify-content: center;
+  justify-content: space-evenly;
 }
-.books-and-publications .card {
-  padding: 0px;
-}
-.books-and-publications .row {
-  justify-content: center;
+@media (min-width: 1000px) {
+  .books-and-publications .container {
+    width: 1000px;
+  }
 }
 
 /*--------------------------------------------------------------
