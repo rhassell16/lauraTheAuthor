@@ -577,15 +577,21 @@ a h2 {
   margin: 0px;
   padding-bottom: 50px;
 }
+.about-podcasts-i-love .podcast-card {
+  width: 220px;
+}
+.about-podcasts-i-love .podcast-card .card-img {
+  width: 220px;
+}
 
 @media (min-width: 1250px) {
   .about-books-i-love .container {
     width: 1250px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1250px) {
   .about-podcasts-i-love .container {
-    width: 1000px;
+    width: 1250px;
   }
 }
 
