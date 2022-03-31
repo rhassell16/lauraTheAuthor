@@ -546,7 +546,7 @@ a h2 {
 .about .author-image img {
   display: flex;
   width: 100%;
-  margin-top: 0px 0px 20px 0px;
+  margin: 0px 0px 20px 0px;
   justify-content: center;
 }
 .about .about-page-content {

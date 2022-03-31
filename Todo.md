@@ -9,6 +9,10 @@
 
 - adjust background and text on the hero so the words align on the binder of the book
 
+## About
+
+- add cv
+
 ## Contact
 
 - add recaptcha
