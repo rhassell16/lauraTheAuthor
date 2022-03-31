@@ -11,7 +11,7 @@
   <meta name="author" content="Riley Hassell">
   <meta http-equiv="Content-Security-Policy"
     content="
-    default-src 'self'; 
+    default-src 'self' https://i52livuoh8.execute-api.us-east-1.amazonaws.com/lauraEmails/contact-us; 
     img-src *;
     child-src 'none';
     script-src 'self' 'unsafe-inline';
@@ -36,46 +36,53 @@
     function submitToAPI(e) {
     e.preventDefault();
 
-    var Namere = /[A-Za-z]{1}[A-Za-z]/;
-    if (!Namere.test($("#name-input").val())) {
-        alert ("Name can not less than 2 char");
-        return;
-    }
-    if ($("#email-input").val()=="") {
-        alert ("Please enter your email id");
-        return;
-    }
-    var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
-    if (!reeamil.test($("#email-input").val())) {
-        alert ("Please enter valid email address");
-        return;
-    }
+    var honeypot = $("#honeypot-trap").val();
 
-    var name = $("#name-input").val();
-    var email = $("#email-input").val();
-    var message = $("#message-input").val();
-    var data = {
-        name: name,
-        email: email,
-        message: message
-        };
+    if (!honeypot.length > 0) {
+      var Namere = /[A-Za-z]{1}[A-Za-z]/;
+      if (!Namere.test($("#name-input").val())) {
+          alert ("Name can not less than 2 char");
+          return;
+      }
+      if ($("#email-input").val()=="") {
+          alert ("Please enter your email id");
+          return;
+      }
+      var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
+      if (!reeamil.test($("#email-input").val())) {
+          alert ("Please enter valid email address");
+          return;
+      }
 
-    $.ajax({
-        type: "POST",
-        url : "https://i52livuoh8.execute-api.us-east-1.amazonaws.com/lauraEmails/contact-us",
-        dataType: "json",
-        crossDomain: "true",
-        contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(data),
-        success: function () {
-            alert("An email has been sent to Laura!");
-            document.getElementById("contact-form").reset();
-            location.reload();
-        },
-        error: function () {
-            alert("Sending the email failed, please try again");
-        }
-    });
+      var name = $("#name-input").val();
+      var email = $("#email-input").val();
+      var message = $("#message-input").val();
+      var data = {
+          name: name,
+          email: email,
+          message: message
+          };
+
+      $.ajax({
+          type: "POST",
+          url : "https://i52livuoh8.execute-api.us-east-1.amazonaws.com/lauraEmails/contact-us",
+          dataType: "json",
+          crossDomain: "true",
+          contentType: "application/json; charset=utf-8",
+          data: JSON.stringify(data),
+          success: function () {
+              alert("An email has been sent to Laura!");
+              document.getElementById("contact-form").reset();
+              location.reload();
+          },
+          error: function () {
+              alert("Sending the email failed, please try again");
+          }
+      });
+    } else {
+      document.getElementById("contact-form").reset();
+      location.reload();
+    }
 }
 
   </script>
@@ -166,10 +173,11 @@
                       </div>
                     </div>
                     <div class="form-group mt-3">
-                      <textarea id="message-input" class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                      <textarea type="text" class="form-control" name="message" id="message-input" rows="5" placeholder="Message" required></textarea>
                     </div>
                     <div class="my-3">
                     </div>
+                    <input name="honeypot" id="honeypot-trap" type="text" class="visually-hidden" tabindex="-1" autocomplete="off">
                     <div class="text-center">
                       <button type="submit" onClick="submitToAPI(event)" class="button btn-lg" style="margin-top:20px;">Submit</button>
                     </div>
