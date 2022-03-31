@@ -9,10 +9,6 @@
 
 - adjust background and text on the hero so the words align on the binder of the book
 
-## navigaton
-
-- fix color schema on navigation
-
 ## Contact
 
 - add recaptcha
