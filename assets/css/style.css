@@ -54,23 +54,32 @@ h3 {
 }
 #header .logo {
   font-size: 28px;
-  font-family: "Pacifico", cursive;
+  font-family: "Cedarville Cursive", cursive;
+  transform: skew(-21deg);
   margin: 0;
   padding: 0;
-  line-height: 1;
-  font-weight: 700;
+  line-height: 80px;
   letter-spacing: 0.5px;
+}
+#header .logo {
   color: rgba(255, 255, 255, 0.7);
 }
+#header .logo:hover {
+  color: white;
+}
 #header .non-index .logo {
+  color: #454545;
+}
+#header .non-index .logo:hover {
   color: black;
 }
-#header .logo a {
-  color: #fff;
+#header.header-scrolled .non-index .logo {
+  color: rgba(255, 255, 255, 0.7);
 }
-#header .logo img {
-  max-height: 100px;
+#header.header-scrolled .non-index .logo:hover {
+  color: white;
 }
+
 @media (max-width: 992px) {
   #header {
     border: 0;
@@ -198,7 +207,7 @@ h3 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -206,7 +215,7 @@ h3 {
   transition: 0.5s;
 }
 .non-index .mobile-nav-toggle {
-  color: black;
+  color: #454545;
 }
 
 @media (max-width: 991px) {
@@ -305,7 +314,7 @@ h3 {
   font-weight: 800;
   line-height: 57px;
   color: #fff;
-  font-family: "Cedarville Cursive", sans-serif;
+  font-family: "Cedarville Cursive", cursive;
 }
 #hero h2 {
   color: #eee;
