@@ -1,9 +1,8 @@
 # To do Now:
 
-## books & publications
+## Hero
 
-- add table background
-- add books on table that you can click on
+- adjust background and text on the hero so the words align on the binder of the book
 
 ## About
 
@@ -27,6 +26,7 @@
 
 # Maybe
 
-## Hero
+## books & publications
 
-- adjust background and text on the hero so the words align on the binder of the book
+- add table background
+- add books on table that you can click on
