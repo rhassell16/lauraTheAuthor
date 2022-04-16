@@ -5,10 +5,6 @@
 - add table background
 - add books on table that you can click on
 
-## Hero
-
-- adjust background and text on the hero so the words align on the binder of the book
-
 ## About
 
 - add cv
@@ -28,3 +24,9 @@
 - clean css
 - clean js
 - move scripts to js files
+
+# Maybe
+
+## Hero
+
+- adjust background and text on the hero so the words align on the binder of the book
