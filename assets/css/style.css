@@ -700,6 +700,7 @@ a h2 {
 }
 .press .card .card-img {
   width: 100%;
+  background-size: contain;
 }
 .press .card-content h2 {
   text-align: left;
