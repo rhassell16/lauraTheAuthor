@@ -102,7 +102,7 @@ h3 {
   width: 100%;
   justify-content: center;
   margin: 0px;
-  padding: 0px;
+  padding: 0px 5px;
 }
 #banner div:hover {
   background-color: #c27e63;
@@ -121,6 +121,10 @@ h3 {
 .banner #banner-content,
 .banner #banner-content a:hover {
   color: white;
+}
+
+#banner .mobile-new-line {
+  display: inline-block;
 }
 
 /*--------------------------------------------------------------
