@@ -36,7 +36,7 @@
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top non-index">
-    <a class="banner" href="contact-newsletter.html#question">
+    <a class="banner" href="contact-newsletter#question">
       <div id="banner">
         <div id="banner-content">
           <span><span class="book-title">Let's Become Strangers</span><span>&nbsp;</span>
