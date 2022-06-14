@@ -592,9 +592,6 @@ a h2 {
 .about a {
   text-decoration: underline;
 }
-.about .read-cv a {
-  text-decoration: none;
-}
 .about-podcasts-i-love {
   margin: 0px;
   padding-bottom: 50px;
@@ -604,15 +601,6 @@ a h2 {
 }
 .about-podcasts-i-love .podcast-card .card-img {
   width: 220px;
-}
-.about .read-cv {
-  display: flex;
-  justify-content: center;
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-.about .button {
-  font-family: "Cedarville Cursive", sans-serif;
 }
 .about #cv-button {
   background: black;
@@ -891,12 +879,12 @@ a h2 {
   text-transform: none;
   text-align: left;
   padding-bottom: 25px;
+  font-family: "Cedarville Cursive", cursive;
 }
 
 .curriculum-vitae .title {
   font-weight: 700;
-  font-style: normal;
-  font-size: 18px;
+  font-size: 15px;
   letter-spacing: .1em;
   line-height: 1em;
   text-transform: uppercase;
@@ -905,7 +893,8 @@ a h2 {
 }
 
 .curriculum-vitae .description,
-.curriculum-vitae .date {
+.curriculum-vitae .date,
+.curriculum-vitae .subtitle {
   font-weight: 400;
   font-style: normal;
   letter-spacing: .01em;
@@ -925,6 +914,11 @@ a h2 {
 .curriculum-vitae .section {
   margin-bottom: 30px;
   padding: 0;
+}
+
+.curriculum-vitae br {
+  display: block;
+  margin: 5px 0;
 }
 
 /*--------------------------------------------------------------
