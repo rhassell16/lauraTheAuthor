@@ -1,32 +1,31 @@
-# To do Now:
+# Master To Do List
 
-## Hero
+## To do Now:
 
-- adjust background and text on the hero so the words align on the binder of the book
+## To do in the Future:
 
-## About
+### URL
 
-- add cv
+- edit url to the .html is not in the url
 
-## Contact
-
-- add recaptcha
-
-# To do Future:
-
-## Contact
-
-- add text about submit that says: "Loading", "submitted", "error"
-
-# Clean
+### Clean
 
 - clean css
 - clean js
 - move scripts to js files
 
-# Maybe
+## Maybe To Do
 
-## books & publications
+### Contact
+
+- add recaptcha
+- add text about submit that says: "Loading", "submitted", "error"
+
+### books & publications
 
 - add table background
 - add books on table that you can click on
+
+### Hero
+
+- adjust background and text on the hero so the words align on the binder of the book

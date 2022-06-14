@@ -592,6 +592,9 @@ a h2 {
 .about a {
   text-decoration: underline;
 }
+.about .read-cv a {
+  text-decoration: none;
+}
 .about-podcasts-i-love {
   margin: 0px;
   padding-bottom: 50px;
@@ -601,6 +604,27 @@ a h2 {
 }
 .about-podcasts-i-love .podcast-card .card-img {
   width: 220px;
+}
+.about .read-cv {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.about .button {
+  font-family: "Cedarville Cursive", sans-serif;
+}
+.about #cv-button {
+  background: black;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.about #cv-button:hover {
+  background: #c27e63;
 }
 
 @media (min-width: 1250px) {
@@ -833,6 +857,74 @@ a h2 {
   .books-and-publications .container {
     width: 1000px;
   }
+}
+
+/*--------------------------------------------------------------
+# curriculum-vitae
+--------------------------------------------------------------*/
+.curriculum-vitae  .curriculum-vitae-page-content {
+  font-size: 18px;
+  color: black;
+  margin: 0px;
+  padding: 50px 0px 50px 0px;
+}
+
+.curriculum-vitae .divider {
+  box-sizing: border-box;
+  width: 66.66%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 17px;
+}
+
+.curriculum-vitae hr {
+  border: none;
+  height: 1px;
+}
+
+.curriculum-vitae .topic {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 39px;
+  letter-spacing: -.02em;
+  line-height: 1em;
+  text-transform: none;
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+.curriculum-vitae .title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 18px;
+  letter-spacing: .1em;
+  line-height: 1em;
+  text-transform: uppercase;
+  text-align: left;
+  margin-top: 0;
+}
+
+.curriculum-vitae .description,
+.curriculum-vitae .date {
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: .01em;
+  line-height: 1.4em;
+  font-size: 18px;
+  text-transform: none;
+  color: rgba(40,26,23,.6);
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.curriculum-vitae .date {
+  font-style: italic;
+}
+
+.curriculum-vitae .section {
+  margin-bottom: 30px;
+  padding: 0;
 }
 
 /*--------------------------------------------------------------
