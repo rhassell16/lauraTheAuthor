@@ -4,10 +4,6 @@
 
 ## To do in the Future:
 
-### URL
-
-- edit url to the .html is not in the url
-
 ### Clean
 
 - clean css
